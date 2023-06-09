@@ -1,14 +1,48 @@
 
-/* Element Selector */
+html {
+    background: radial-gradient(circle, rgba(222,145,83,1) 0%, rgba(217,215,210,1) 50%, rgba(236,71,82,1) 100%);
+}
+
+header {
+    width: 90%;
+    margin: 0 auto;
+    background-color: #82888f;
+    padding: 3px;
+    margin-top: 10px;
+}
+
+h1 {
+    color: #fff;
+    font-size: 45px;
+    text-align: center;
+    filter: drop-shadow(10px 10px 10px black);
+}
+
+h2 {
+    text-align: center;
+}
+
 img {
-    width: 30%;
+
+    max-width: 100%;
+    height: auto;
+  }
+
+
+img:hover{
+    filter: blur(2px)brightness(0.5);
 }
 
 /* class selector */
 .wrapper {
-    background-color: #d2d1cf;
-    width: 100%;
+    background-color: #5da4c2;
+    width: 80%;
+    border: 2px solid #000000;
     margin: 0 auto;
+}
+
+div.wrapper  {
+    width: 80%;
 }
 
 /* combinators */
@@ -32,3 +66,8 @@ ul li:nth-child(odd) {
     font-weight: bold;
 }
 
+/* fixed the issue I had from the last lab */
+table {
+    table-layout: fixed;
+    width: 100%;
+}
